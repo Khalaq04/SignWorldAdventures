@@ -1,0 +1,194 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.head{
+    margin-top: 3%;
+    font-family: "Press Start 2P", system-ui;
+    animation: slide-in 1000ms;
+    color: rgb(185, 183, 31);
+}
+
+#result{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#score{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: gold;
+}
+body{
+
+    background-color: #bcd8b4;
+    background-image: url("../images/forest4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+.submit{
+    border-style: outset;
+    border-radius: 45%;
+}
+.asl-letters {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.asl-letters img {
+    width: 100px; 
+    height: 100px;
+    margin-right: 5px; 
+}
+
+/* .image-container {
+    margin-bottom: 20px;
+} */
+
+
+.image-container img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    color: #000000;
+    background-color: #bcd8b457;
+    line-height: 1;
+    outline: none;
+    width: 40%;
+    padding: 1.2%;
+    border-radius: 8px;
+    border-color: rgb(57, 95, 69);
+    transition: background-position 0.8s ease-out;
+    margin-top: 10px;
+
+}
+
+input[type="text"]::placeholder{
+    color: #000000;
+}
+
+.submit {
+    background-color: rgb(57, 95, 69);
+    color: white;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+    
+}
+
+
+
+.submit:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.submit:active {
+  opacity: 0.8;
+}
+
+.reload{
+    
+    align-content: center;
+     
+    background-color: rgb(57, 95, 69);
+    color: white;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+   
+
+
+}
+
+.reload:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.reload:active{
+    opacity: 0.8;
+}
+
+.monkey{
+    margin-top: -100px;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    left: -100px;
+    animation: slideInFromTopLeft 2s ease-in-out; /* Adjust the duration and timing function as needed */
+    z-index: -1;
+
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+@keyframes slideInFromTopLeft {
+    from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    
+#result{
+    color: white;
+    font-size: x-large;
+}
+
+#gameover {
+    visibility: hidden;
+    position: absolute;
+    font-size: 100px;
+    border-color: white;
+    border: 3px solid;
+    background-color: #0000006c;
+    color: white;
+    font-weight: bolder;
+    border-radius: 8%;
+    margin-top: 5%;
+    margin-left: 17%;
+    padding: 10%;
+}
+
+#next{
+    font-size: xx-large;
+}

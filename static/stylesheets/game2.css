@@ -1,0 +1,49 @@
+h2
+{
+padding-bottom:20px;
+font-weight: 600;
+font-size: 3.2em
+}
+
+#image {
+    display: block;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 10%;
+}
+
+#back {
+    display: block;
+}
+
+body {
+    background-image: url("../images/arbg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 15px;
+}
+
+img {
+    border-radius: 10%;
+}
+
+button {
+    background-color: #ff9f9f;
+    border-radius: 20%;
+    font-size: 150%;
+    padding: 0.5% 1.2%;
+    margin-top: 3%;
+    width: 10%;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}

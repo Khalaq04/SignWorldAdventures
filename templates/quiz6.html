@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "{{ url_for('static', filename='stylesheets/quiz6.css') }}">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <body>
+        <br>
+        <div id="heading">
+            <center>
+                <h1>Quiz 6</h1>
+                <div id="description">
+                    Attempt the quiz below and test Your knowledge<br><br>
+                    <br><br><br>
+                </div>
+            </center>
+        </div>
+        <br>
+        <br>
+        <div id="quiz-container">
+            <div id="question-container"></div>
+            <form id="options-form">
+                <div id="options-container"></div>
+                <button id="submit-btn" type="button">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <br>
+        <script src="{{ url_for('static', filename='js/quiz6.js') }}"></script>
+
+    </body>
+</html>

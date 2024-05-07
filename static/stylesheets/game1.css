@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    font-size: 1.3em;
+    text-align: center;
+    background: #1b1523;
+    color: #fff;
+}
+
+.App {
+    max-width: 860px;
+    margin: 40px auto;
+}
+
+button {
+    background: none;
+    border: 2px solid #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    background: #c23866;
+    color: #fff;
+}
+
+.memory-game {
+    margin-left: 12.5%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr 0fr;
+    grid-gap: 10px;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.memory-card {
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card img {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+.memory-card .front {
+    transform: rotateY(90deg);
+    position: absolute;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+  
+.memory-card.flip .front {
+    transform: rotateY(0deg);
+}

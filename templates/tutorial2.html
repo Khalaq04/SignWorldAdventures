@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "{{ url_for('static', filename='stylesheets/tutorial2.css') }}">
+    </head>
+    
+    <br>
+    <div id="id">{{ id }}</div>
+    <div id="heading">
+        <center>
+            <h1>Tutorial 2</h1>
+            <div id="description">
+                Learn Basic Salutations!<br>
+                Complete the quiz at the end of the tutorial to get to the next island in SignWorld!
+                <br><br><br>
+            </div>
+        </center>
+    </div>
+
+    <br>
+
+    <div id="body">
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/hello.png') }}" alt="{{ i }}">
+            <p id="text">
+                HELLO<br>
+                Remember to always say hello when meeting someone!
+            </p>
+        </div>
+
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/bye.png') }}" alt="{{ i }}">
+            <p id="text">
+                BYE<br>
+                End of a good ASL conversation!
+            </p>
+        </div>
+
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/love.png') }}" alt="{{ i }}">
+            <p id="text">
+                I LOVE YOU<br>
+                Always appreciate those you love!
+            </p>
+        </div>
+
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/yes.png') }}" alt="{{ i }}">
+            <p id="text">
+                YES<br>
+                You know what you want...
+            </p>
+        </div>
+
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/no.png') }}" alt="{{ i }}">
+            <p id="text">
+                NO<br>
+                ...and what you don't!
+            </p>
+        </div>
+
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/please.png') }}" alt="{{ i }}">
+            <p id="text">
+                PLEASE<br>
+                Never hurts to be polite!
+            </p>
+        </div>
+
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/sorry.png') }}" alt="{{ i }}">
+            <p id="text">
+                SORRY<br>
+                It's ok to make mistakes if you are ready to do better!
+            </p>
+        </div>
+
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/thanks.png') }}" alt="{{ i }}">
+            <p id="text">
+                THANKS<br>
+                Garatitude >> Attitude!!
+            </p>
+        </div>
+
+        <div id="card">
+            <img src="{{ url_for('static', filename='imagest2/welcome.png') }}" alt="{{ i }}">
+            <p id="text">
+                WELCOME<br>
+                Be huhmble, don't bumble!
+            </p>
+        </div>
+
+        <br><br>
+        <button onclick="gotoquiz()">QUIZ!!</button>
+
+    </div>
+
+</html>
+
+<script>
+    function gotoquiz(){
+    var id = document.getElementById("id").innerHTML
+    window.location = "/quiz/2/"+id.toString()
+}
+</script>

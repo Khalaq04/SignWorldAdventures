@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "{{ url_for('static', filename='stylesheets/tutorial5.css') }}">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <body>
+    
+    <br>
+    <div id="heading">
+        <center>
+            <h1>Tutorial 5</h1>
+            <div id="description">
+                Lets learn some new words so you can converse at your School!!<br>
+                Go round the carrousel using the arrow keys and flip the cards to reveal what those Gestures mean!!<br><br>
+                Attempt the Quiz at the end to proceed to the next Tutorial.<br><br><br>
+            </div>
+        </center>
+    </div>
+    <br>
+    <br>
+    
+    <div id="main-cont">
+        <div class='carrousel'>
+            <div class='c0 position0 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Book.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Book</h1> 
+                        <p>
+                            To sign book, put your hands together, palm-to-palm. 
+                            Then keeping your pinkies together, open up your hands as if opening up a book.
+                            <br><br>
+                          For when u want a Book
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c1 position1 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{url_for('static', filename='images_t5/Bathroom.png')}}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Bathroom</h1>
+                        <p>
+                            Bathroom is signed by making letter 'T' with our dominant hand, 
+                            and then shaking it back and forth in front of us.
+                            <br><br>
+                            It is very useful everyone need a bathroom break!!
+                        </p> 
+                      </div>
+                    </div>
+                </div>   
+            </div>
+            <div class='c2 position2 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Come.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Come</h1> 
+                        <p>Come starts with both your hands extending with index fingers pointing forward. 
+                            Then pull your arms with index finger still pointing, toward your body. 
+                            <br><br>
+                            You can use this gesture to call your friends/teachers towards you.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c3 position3 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Count.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Count</h1>
+                        <p>
+                            To sign count , your one hand should be flat with palm facing upwards.
+                            Then take your thumb and index finger of the other arm  together and make an imaginary circle on your base palm.
+                            <br><br>
+                            Will be helpful in maths class :)
+                        </p> 
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c4 position4 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/DontKnow.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Don't Know</h1>
+                        <p>
+                            Point to your forehead with your dominant hand with fingers together and move your hand away from you, 
+                            while slightly shaking your head to show negation.
+                            Alternatively, shrug your shoulders.
+                        </p> 
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c5 position5 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Forgot.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Forgot</h1> 
+                        <p>
+                            Forget is signed by swiping your dominant hand across your forehead.
+                            <br><BR>
+                            Like when u forget your homework at home :(
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c6 position6 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Friend.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Friend</h1> 
+                        <p>
+                            Make a letter C with your index fingers and make them hug eachother
+                            from both sides like friends do!!
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c7 position7 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/GetDressed.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Get Dressed</h1> 
+                        <p>
+                            With open hands, brush down the front of your chest with your 
+                            thumbs and then away from your body.
+                            <br><br>
+                            Gotta get dressed to go out now !!
+
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c8 position8 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/GoodMorning.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Good Morning</h1> 
+                        <p>
+                            Good to learn the basic salutaions for greeting people at school!!
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c9 position9 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/HELP.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Help</h1>
+                        <p>
+                            To sign help, place your closed-fist, dominant 'A' hand on top of your non-dominant open palm, 
+                            and move both hands upwards.
+                            <br><br>
+                            Dont ever be afraid to ask for help! 
+                        </p> 
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c10 position10 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Learn.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Learn</h1>
+                        <p>
+                            Lift your  palm up, then spread your other hand's curved fingers on your other palm, then pull your
+                            hand up with fingers forming a flat 'O' shape, touching them to your forehead.
+                            It is as if you are transferring knowledge from book to your brain.
+                        </p> 
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c11 position11 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Question.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Question</h1> 
+                        <p>
+                            Simply take your index finger and trace a big question mark in the air in front of you.
+                            <br><br>
+                            You are going to school ofcourse you'll have questions or doubts
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c12 position12 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Read.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Read</h1> 
+                        <p>
+                            To sign "Read" make a flat hand with your non-dominant hand, and with your dominant hand in a 'V' shape, 
+                            pretend your fingers are scanning a book on your open palm.
+
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c13 position13 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Remember.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Remember</h1> 
+                        <p>
+                            Form both hands into a loose ASL letter A sign. 
+                            Hold your non-dominant 'A' hand steady before, take your dominant 'A' hand's thumb to your forehead, then bring it down to touch your other thumb.
+                            <br><br>
+                            Remember this sign!!
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c14 position14 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/School.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>School</h1> 
+                        <p>
+                            School is signed by clapping your flat, open hands together, 
+                            with the top hand's fingers perpendicularly angled to the bottom's.
+                            <br><br>
+                            Gotta be ready for it!
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c15 position15 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Student.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Student</h1> 
+                        <p>
+                            To sign "student," first sign "learn" by spreading your dominant hand's fingers on your non-dominant palm, 
+                            then pull your hand up to your forehead, and finish by sliding both flat hands downward in front of your body for the person.
+                            <br><br>
+                            This sign is useful when you want to ask someone if they are a student or when introducing yourself.                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c16 position16 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Study.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Study</h1> 
+                        <p>
+                            To sign "study," hold your non-dominant hand flat and facing you, 
+                            then use your dominant hand in a '5' shape to wiggle your fingers in front of it while moving back 
+                            and forth a couple of times.
+                            <br>
+                            <br>
+                            Imagine this sign as mimicking your eyes intently reading and studying what is on the page or book before you.
+
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c17 position17 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Teacher.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Teacher</h1> 
+                        <P>
+                            To sign "teacher," sign "teach" by closing your fingers and thumbs near your forehead, 
+                            then sign "person" by bringing parallel open palms down from shoulder to waist level.
+                            <br><br>
+                            Useful when u want to ask for your teacher at school.
+                        </P>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c18 position18 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/text.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>test</h1> 
+                        <p>
+                            To sign test, form both hands into hooks (or ASL letter X)
+                            Then bring down both 'X' hands as you spread them flat side by side, to signify paper.
+                            <br><br>
+                            Part of your life cannot run from it...
+                            All the Best!!
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class='c19 position19 card'>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='images_t5/Uniform.png') }}" alt="Book" class="img">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Uniform</h1> 
+                        <p>
+                            first, sign clothes, then sign same, but with both hands making a circle in unison, 
+                            indicating everyone else in the group.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#"> <!--quiz5.html-->
+          <button class="quiz">
+              Quiz
+          </button>
+      </a>
+    </div>
+    <script src="{{ url_for('static', filename='js/tutorial5.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+
+body {
+    
+    background-image: url("../images_game3/forest5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 15px;
+    
+
+}
+
+.allthings{
+    animation: top-in 1000ms;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 15.5%;
+    width: 70%;
+    border: 5px solid #514429;
+}
+
+.but1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide-in 2000ms;
+}
+.but2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: right-in 2000ms;
+
+}
+.wrappper {
+    width: 100%;
+    margin: 0 auto;
+}
+.wrappper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+canvas {
+    color: #000000;
+    border: #000000 dashed 2px;
+    padding: 15px;
+}
+h1, h2, h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+h2 {
+    font-family: "Shadows Into Light", cursive;
+}
+p {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 30px;
+    font-weight: 700;
+}
+#alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 900px;
+}
+#alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 35px;
+    height: 30px;
+    padding-top: 10px;
+    background: #ae946ecc;
+    color: #5b4d30;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px #fff;
+}
+#alphabet li:hover {
+    background: #87744f;
+    border: solid 1px #fff;
+    color: #fff;
+}
+#my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: block;
+}
+#my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.6em;
+}
+.active {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition: all 1s ease-in;
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+  }
+  
+  .active:hover {
+    transition: all 1s ease-in;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition: all 1s ease-in;
+    transition: all 0.3s ease-in-out;
+  }
+  #mylives {
+    font-size: 35px;
+    text-align: center;
+    display: block;
+}
+button {
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    background: #5b4d30;
+    color: #fff;
+    border: solid 1px #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+}
+button:hover {
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgb(153, 120, 83);
+    border: solid 1px #fff;
+    color: #dcd9d2;
+}
+@media (max-width: 767px) {
+    #alphabet {
+        padding: 0 0 0 15px;
+   }
+}
+@media (max-width: 480px) {
+    #alphabet {
+        padding: 0 0 0 25px;
+   }
+}
+
+@keyframes top-in {
+    from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes right-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+

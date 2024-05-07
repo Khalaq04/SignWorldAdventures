@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCQ Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .option {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    #cover{
+        background-color: white;
+        position: fixed;
+        width: 100px;
+        height: 50px;
+        margin-top: -18.5%;
+        margin-left: 47%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MCQ Game</h1>
+    <div id="question" class="question"></div>
+    <div id="options"></div>
+    <p id="result"></p>
+    <p id="score">Score: 0</p>
+    <button id="next" onclick="nextQuestion()">Next Question</button>
+    <button id="nexttut" onclick="nexttut()" style="visibility: hidden;">Continue</button>
+  </div>
+  <div id="id" style="visibility: hidden;">{{ id }}</div>
+
+  <!-- <div id="cover"></div> -->
+
+  <script>
+    const questions = [
+      {
+        image: "{{ url_for('static', filename='images_t3/banana.webp') }}",
+        options: ["Banana", "Apple", "Monkey", "Bread"],
+        answerIndex: 0 // Index of the correct answer in options array
+      },
+      {
+        image: "{{ url_for('static', filename='images_t3/carrot.webp') }}",
+        options: ["Giraffe", "Carrot", "Grapes", "Corn"],
+        answerIndex: 1 // Index of the correct answer in options array
+      },
+      {
+        image: "{{ url_for('static', filename='images_t3/panda.webp') }}",
+        options: ["Elephant", "Potato", "Panda", "Zebra"],
+        answerIndex: 2 // Index of the correct answer in options array
+      },
+    //   {
+    //     image: "{{ url_for('static', filename='imagest2/no.png') }}",
+    //     options: ["Please", "Welcome", "Yes", "No"],
+    //     answerIndex: 3 // Index of the correct answer in options array
+    //   },
+    //   {
+    //     image: "{{ url_for('static', filename='imagest2/yes.png') }}",
+    //     options: ["Bye", "Hello", "Love", "Yes"],
+    //     answerIndex: 3 // Index of the correct answer in options array
+    //   },
+    //   {
+    //     image: "{{ url_for('static', filename='imagest2/please.png') }}",
+    //     options: ["Yes", "Welcome", "Please", "Thanks"],
+    //     answerIndex: 2 // Index of the correct answer in options array
+    //   },
+    //   {
+    //     image: "{{ url_for('static', filename='imagest2/sorry.png') }}",
+    //     options: ["Love", "Sorry", "No", "Hello"],
+    //     answerIndex: 1 // Index of the correct answer in options array
+    //   },
+    //   {
+    //     image: "{{ url_for('static', filename='imagest2/thanks.png') }}",
+    //     options: ["Thanks", "Bye", "Welcome", "Yes"],
+    //     answerIndex: 0 // Index of the correct answer in options array
+    //   },
+    //   {
+    //     image: "{{ url_for('static', filename='imagest2/welcome.png') }}",
+    //     options: ["Love", "Hello", "Welcome", "No"],
+    //     answerIndex: 2 // Index of the correct answer in options array
+    //   },
+      
+      // Add more questions as needed
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    function loadQuestion() {
+      const questionDiv = document.getElementById('question');
+      const optionsDiv = document.getElementById('options');
+      const resultDiv = document.getElementById('result');
+
+      // Clear previous question and options
+      questionDiv.innerHTML = '';
+      optionsDiv.innerHTML = '';
+      resultDiv.textContent = '';
+
+      // Load current question
+      const currentQuestion = questions[currentQuestionIndex];
+      const image = document.createElement('img');
+      image.src = currentQuestion.image;
+      questionDiv.appendChild(image);
+
+      // Load options
+      currentQuestion.options.forEach((option, index) => {
+        const optionDiv = document.createElement('div');
+        optionDiv.classList.add('option');
+        optionDiv.textContent = option;
+        optionDiv.addEventListener('click', () => {
+          checkAnswer(index);
+        });
+        optionsDiv.appendChild(optionDiv);
+      });
+    }
+
+    function checkAnswer(selectedIndex) {
+      const currentQuestion = questions[currentQuestionIndex];
+      if (selectedIndex === currentQuestion.answerIndex) {
+        score++;
+        nextQuestion()
+        document.getElementById('result').textContent = 'Correct!';
+      } else {
+        document.getElementById('result').textContent = 'Incorrect!';
+        score -= 0.5;
+      }
+      document.getElementById("score").innerHTML = "Score: "+score.toString()
+    }
+
+    function nextQuestion() {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < questions.length) {
+        loadQuestion();
+      } else {
+        showResult();
+      }
+    }
+
+    function showResult() {
+      document.getElementById('question').textContent = 'Quiz Completed!';
+      document.getElementById('next').style.visibility = 'hidden'
+      document.getElementById('options').innerHTML = '';
+      document.getElementById('result').textContent = `Your score: ${score} / ${questions.length}`;
+      document.getElementById('nexttut').style.visibility = 'visible';
+    }
+
+    function nexttut(){
+    console.log(score)
+    var id = document.getElementById("id").innerHTML
+    const request = new XMLHttpRequest()
+    request.open('POST', `/quizres/${id}/2/${JSON.stringify(score)}`)
+    request.send()
+    window.location = "/home/"+id.toString()
+}
+    // Load the first question when the page loads
+    loadQuestion();
+  </script>
+</body>
+</html>

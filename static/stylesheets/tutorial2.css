@@ -1,0 +1,55 @@
+#heading{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgba(0, 0, 0, 0.368);
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+  }
+  
+  body{
+    /* background-color: #64923dbb; */
+    background-image: url('/static/bgt2.webp') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+#body{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgba(0, 0, 0, 0.368);
+    color: rgb(255, 255, 255);
+}
+
+#card {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    column-gap: 5%;
+   }
+
+img{
+    margin-left: 15%;
+    margin-top: 15%;
+    border-radius: 8%;
+}
+
+p{
+    font-size: x-large;
+    margin-top: 20%;
+    /* font-weight: bolder; */
+}
+
+button{
+  margin-bottom: 1.5%;
+  margin-left: 43%;
+  height: 187px;
+  width: 187px;
+  border-radius: 8%;
+  font-size: xx-large;
+  font-weight: bolder;
+}

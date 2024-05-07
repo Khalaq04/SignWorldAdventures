@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/tutorial4.css') }}">
+</head>
+<body>
+    <div id="heading">
+        <center>
+            <h1>Tutorial 6</h1>
+            <div id="description">
+                Let's learn some new words so you can hold up a basic conversation<br>
+                Here is a conversation between two friends<br>
+                Attempt the Quiz at the end to proceed to next Stage.<br><br><br>
+            </div>
+        </center>
+    </div>
+    <br><br>
+    <div id="body">
+        <p class="end">
+            --Two friends Sarah & David--
+        </p>
+        <!--Sarah-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t4/hello.webp') }}" title="hello" class="sign">
+            <img src="{{ url_for('static', filename='images_t4/how_much.webp') }}" title="how" class="sign">
+        </div>
+        <p class="message">
+            [Hello]&nbsp;&nbsp;&nbsp;[How]
+            <br>
+            Sarah: Hello! How are You? <br> (Sign Hello and How then point to person for You)
+        </p>
+
+        <!--David-->
+        <div class="response">
+
+            <img src="{{ url_for('static', filename='images_t4/question.webp') }}" title="question" class="sign">
+            <img src="{{ url_for('static', filename='images_t4/movie.webp') }}" title="movie" class="sign">
+            <img src="{{ url_for('static', filename='images_t4/see.webp') }}" title="see" class="sign">
+            <img src="{{ url_for('static', filename='images_t4/good.webp') }}" title="good" style="width: 150px; height: 150px; background-color: rgba(240, 248, 255, 0.648);">
+
+        </div>
+        <p class="mess-response">
+            [Good]&nbsp;&nbsp;&nbsp;  [watch] &nbsp;&nbsp;&nbsp; [movie] &nbsp;&nbsp;&nbsp; [?]
+            <br> David: Good! Want to watch a movie?
+        </p>
+        <!--Sarah-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t4/no.webp') }}" title="no" style="width: 150px; height: 150px; background-color: rgba(240, 248, 255, 0.648);">
+            <img src="{{ url_for('static', filename='images_t4/time.webp') }}" title="time" class="sign">
+            <img src="{{ url_for('static', filename='images_t4/now.webp') }}" title="now" style="width: 150px; height: 150px; background-color: rgba(240, 248, 255, 0.648);">
+            <img src="{{ url_for('static', filename='images_t4/sorry.webp') }}" title="sorry" class="sign">
+        </div>
+        <p class="message">
+            [No]&nbsp;&nbsp;&nbsp;  [time] &nbsp;&nbsp;&nbsp; [now] &nbsp;&nbsp;&nbsp; [sorry]
+            <br>
+            Sarah: No time right now, sorry.
+        </p>
+
+        <!--David-->
+        <div class="response">
+            <div style="background-color:  rgba(240, 248, 255, 0.648);">
+                <img src="{{ url_for('static', filename='images_t4/okay.webp') }}" title="okay" class="scase">
+                <img src="{{ url_for('static', filename='images_t4/next.webp') }}" title="next" class="scase" >
+                <img src="{{ url_for('static', filename='images_t4/week.webp') }}" title="week" class="scase">
+                <img src="{{ url_for('static', filename='images_t4/question.webp') }}" title="question" class="scase">
+            </div>
+        </div>
+        <p class="mess-response">
+            [Okay]&nbsp;&nbsp;&nbsp; [next]&nbsp;&nbsp;&nbsp; [week]
+            <br>
+            David: Okay! Next week then?
+        </p>
+
+        <!--Sarah-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t6/yes-transformed.webp') }}" title="yes" style="width: 150px; height: 150px; background-color: rgba(240, 248, 255, 0.648);">
+        </div>
+        <p class="message">
+            [Yes]
+            <br>
+            Sarah: Yes!
+        </p>
+
+        <!--David-->
+        <div class="response">
+            <img src="{{ url_for('static', filename='images_t4/goodbye.webp') }}" title="bye" class="sign">
+            <img src="{{ url_for('static', filename='images_t4/great.webp') }}" title="great" class="sign">
+            
+        </div>
+        <p class="mess-response">
+            [Great] &nbsp;&nbsp;&nbsp; [Good Bye] 
+            <br> David: Great! Good bye.
+        </p>
+
+        <!--Sarah-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t4/goodbye.webp') }}" title="bye" class="sign">
+        </div>
+        <p class="message">
+            [Good Bye]&nbsp;&nbsp;&nbsp;
+            <br>
+            Sarah: Good Bye!
+        </p>
+
+        <p class="end">
+            --The End--
+        </p>
+
+        <a href="#">  <!--quiz6.html-->
+            <button class="quiz">
+                Quiz
+            </button>
+        </a>
+    </div>
+</body>
+</html>

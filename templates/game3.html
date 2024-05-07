@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hangman</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/game3.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+<div class="allthings">  
+<div class="wrapper">
+    <h1>Hangman</h1>
+
+     <p>Use the alphabet provided below to guess the word based on the given ASL gesture clue.</p>
+ </div>
+ <div class="wrapper">
+    <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+     <p id="catagoryName"></p>
+     <div id="hold">
+     </div>
+     <p id="mylives"></p>
+     <p id="clue">Clue -</p>  
+      
+      <div id="buttons"></div>  
+     <div class="container">
+        <button id="reset">Play again</button>
+     </div>
+ </div>
+
+ <div class="but1">
+    <img src="{{ url_for('static', filename='images_game3/butterflies.gif') }}" width="100px" height="auto">
+ </div>
+ <div class="but2">
+    <img src="{{ url_for('static', filename='images_game3/butterflies.gif') }}" width="100px" height="auto">
+ </div>
+</div>  
+</body>
+ <script src="{{ url_for('static', filename='js/game3.js') }}"></script>
+</html>
+ 
+ 
+ 
+ 

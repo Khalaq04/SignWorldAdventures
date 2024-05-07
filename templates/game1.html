@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "{{ url_for('static', filename='stylesheets/game1.css') }}">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <body>
+        <div class="App">
+            <h1>Magic Match</h1>
+            <button id="new-game" onclick="shuffleCards()">New Game</button>
+
+            <div id="frame">
+                <div class="memory-game">
+                    {% for i in ind %}
+                        <div class="memory-card" data-framework="{{ i }}">
+                            <img class="front" src="{{ url_for('static', filename='images_game1/signs/'+i+'.png') }}" alt="{{ i }}" />
+                            <img class="back" src="{{ url_for('static', filename='images_game1/cover.png') }}" alt="back" />
+                        </div>
+                    {% endfor %}
+
+                    {% for i in ind %}
+                        <div class="memory-card" data-framework="{{ i }}">
+                            <img class="front" src="{{ url_for('static', filename='images_game1/alphabets/'+i+'.png') }}" alt="{{ i }}" />
+                            <img class="back" src="{{ url_for('static', filename='images_game1/cover.png') }}" alt="back" />
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+        <h1 id="turns"></h1>
+        <script src="{{ url_for('static', filename='js/game1.js') }}"></script>
+
+    </body>
+</html>

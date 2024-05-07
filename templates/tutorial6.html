@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/tutorial6.css') }}">
+</head>
+<body>
+    <div id="id">{{ id }}</div>
+    <div id="heading">
+        <center>
+            <h1>Tutorial 6</h1>
+            <div id="description">
+                Let's learn some new words so you can converse at your local Market!!<br>
+                Here is a conversation between a customer and a shopkeeper<br>
+                Attempt the Quiz at the end to proceed.<br><br><br>
+            </div>
+        </center>
+    </div>
+    <br><br>
+    <div id="body">
+        <p class="end">
+            --Scene at a Shop in the Market--
+        </p>
+        <!--Customer-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t6/hello.webp') }}" title="sign" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/have.webp') }}" title="have" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/fruits.webp') }}" title="fruits" class="sign">
+        </div>
+        <p class="message">
+            [Hello]&nbsp;&nbsp;&nbsp;[Have]&nbsp;&nbsp;&nbsp;[Fruits]
+            <br>
+            Customer: Hello! Do u have fruits?
+        </p>
+
+        <!--Shopkeeper-->
+        <div class="response">
+
+            <img src="{{ url_for('static', filename='images_t6/want.webp') }}" title="want" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/fruits.webp') }}" title="fruits" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/what.webp') }}" title="what" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/yes-transformed.webp') }}" title="yes" style="width: 100px; height: 100px; background-color: rgba(240, 248, 255, 0.648);">
+
+        </div>
+        <p class="mess-response">
+            [Yes]&nbsp;&nbsp;&nbsp;  [what] &nbsp;&nbsp;&nbsp; [fruits] &nbsp;&nbsp;&nbsp; [want]
+            <br> Shopkeeper: Yes! what fruits you want?
+        </p>
+        <!--Customer-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t6/number_5-transformed.webp') }}" title="five" style="width: 90px; height: 100px; background-color: rgba(240, 248, 255, 0.648);">
+            <img src="{{ url_for('static', filename='images_t6/apple.webp') }}" title="apple" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/number_7-transformed.webp') }}" title="seven" style="width: 90px; height: 100px; background-color: rgba(240, 248, 255, 0.648);">
+            <img src="{{ url_for('static', filename='images_t6/pear.webp') }}" title="pear" class="sign">
+        </div>
+        <p class="message">
+            [Five(5)]&nbsp;&nbsp;&nbsp;  [apple] &nbsp;&nbsp;&nbsp; [seven(7)] &nbsp;&nbsp;&nbsp; [pear]
+            <br>
+            Customer: Five apples and 7 pears.
+        </p>
+
+        <!--Shopkeeper-->
+        <div class="response">
+            <div style="background-color:  rgba(240, 248, 255, 0.648);">
+                <img src="{{ url_for('static', filename='images_t6/okay.webp') }}" title="okay" class="scase">
+                <img src="{{ url_for('static', filename='images_t6/anything.webp') }}" title="anything" class="scase" >
+                <img src="{{ url_for('static', filename='images_t6/more.webp') }}" title="more" class="scase">
+            </div>
+        </div>
+        <p class="mess-response">
+            [Okay]&nbsp;&nbsp;&nbsp; [Anything]&nbsp;&nbsp;&nbsp; [More]
+            <br>
+            Shopkeeper: Okay! Anything more?
+        </p>
+
+        <!--Customer-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t6/yes-transformed.webp') }}" title="yes" style="width: 100px; height: 100px; background-color: rgba(240, 248, 255, 0.648);">
+            <img src="{{ url_for('static', filename='images_t6/want.webp') }}" title="want" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/small.webp') }}" title="small" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/shirt.webp') }}" title="shirt" class="sign">
+        </div>
+        <p class="message">
+            [Yes]&nbsp;&nbsp;&nbsp;  [want] &nbsp;&nbsp;&nbsp;[Small] &nbsp;&nbsp;&nbsp; [Shirt] 
+            <br>
+            Customer: Yes I want a small( in this case size ) Shirt
+        </p>
+
+        <!--Shopkeeper-->
+        <div class="response">
+            <img src="{{ url_for('static', filename='images_t6/color.webp') }}" title="color" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/what.webp') }}" title="what" class="sign">
+            
+        </div>
+        <p class="mess-response">
+            [What] &nbsp;&nbsp;&nbsp; [Color] 
+            <br> Shopkeeper: What color?
+        </p>
+
+        <!--Customer-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t6/red.webp') }}" title="red" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/please.webp') }}" title="please" class="sign">
+        </div>
+        <p class="message">
+            [Red]&nbsp;&nbsp;&nbsp;  [Please] 
+            <br>
+            Customer: Red please!
+        </p>
+
+        <!--Shopkeeper-->
+        <div class="response">
+            <div style="background-color:  rgba(240, 248, 255, 0.648);">
+                <img src="{{ url_for('static', filename='images_t6/okay.webp') }}" title="okay" class="scase">
+                <img src="{{ url_for('static', filename='images_t6/anything.webp') }}" title="anything" class="scase" >
+                <img src="{{ url_for('static', filename='images_t6/more.webp') }}" title="more" class="scase">
+            </div>
+        </div>
+        <p class="mess-response">
+            [Okay]&nbsp;&nbsp;&nbsp;[Anything]&nbsp;&nbsp;&nbsp;[More]
+            <br>
+            Shopkeeper: Okay! Anything more?
+        </p>
+
+        <!--Customer-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t6/no.webp') }}" title="no" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/thank_you.webp') }}" title="thank you" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/how_much.webp') }}" title="how-much" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/money.webp') }}" title="money" class="sign">
+
+        </div>
+        <p class="message">
+            [No]&nbsp;&nbsp;&nbsp;[Thank you] &nbsp;&nbsp;&nbsp; [How much ]&nbsp;&nbsp;&nbsp;[Money]
+            <br>
+            Customer: No, Thank You! How much money?
+        </p>
+
+        <!--Shopkeeper-->
+        <div class="response">
+            <img src="{{ url_for('static', filename='images_t6/dollar.webp') }}" title="dollar" class="sign">
+            <img src="{{ url_for('static', filename='images_t6/number_100.webp') }}" title="100" class="sign">
+        </div>
+        <p class="mess-response">
+            [100] &nbsp;&nbsp;&nbsp; [Dollar] 
+            <br> Shopkeeper: 100 dollars/bucks. 
+        </p>
+
+        <!--Customer-->
+        <div class="conversation">
+            <img src="{{ url_for('static', filename='images_t6/thank_you.webp') }}" title="thank you" class="sign">
+
+        </div>
+        <p class="message">
+            [Thank you]
+            <br>
+            Customer: (after paying) Thank You!
+        </p>
+
+        <!--Shopkeeper-->
+        <div class="response">
+            <img src="{{ url_for('static', filename='images_t6/thank_you.webp') }}" title="thank you" class="sign">
+        </div>
+        <p class="mess-response">
+            [Thank you]
+            <br>
+            Shopkeeper: (after receiving money ) Thank You!
+        </p>
+
+        <p class="end">
+            --The End--
+        </p>
+
+       
+            <button class="quiz" onclick="gotoquiz()">
+                Quiz
+            </button>
+       
+    </div>
+</body>
+</html>
+

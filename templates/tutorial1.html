@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "{{ url_for('static', filename='stylesheets/tutorial1.css') }}">
+    </head>
+    
+    <br>
+    <div id="id">{{ id }}</div>
+    <div id="heading">
+        <center>
+            <h1>Tutorial 1</h1>
+            <div id="description">
+                Learn how to sign the alphabet!<br>
+                Flip the cards to see the sign for each alphabet<br>
+                Complete the quiz at the end of the tutorial to get to the next island in SignWorld!
+                <br><br><br>
+            </div>
+        </center>
+    </div>
+
+    <br>
+    
+    <div id="letters">
+        <script src="{{url_for('static', filename='/js/tutorial1.js')}}"></script>
+        <br><br><br>
+        <div class="row">
+            <div class="column">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>A</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/A.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>D</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/D.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>G</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/G.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>J</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/J.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>M</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/M.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>P</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/P.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>S</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/S.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>V</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/V.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>X</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/X.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+            </div>
+
+            <div class="column">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>B</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/B.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>E</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/E.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>H</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/H.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>K</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/K.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>N</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/N.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>Q</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/Q.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>T</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/T.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>W</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/W.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>Z</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/Z.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+            </div>
+
+            <div class="column">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>C</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/C.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>F</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/F.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>I</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/I.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>L</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/L.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>O</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/O.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>R</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/R.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>U</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/U.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>Y</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="{{ url_for('static', filename='images/Y.png') }}" alt="{{ i }}">
+                        </div>
+                    </div>
+                </div><br><br><br>
+
+                <button onclick="gotoquiz()">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p id="quiz">QUIZ!!</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p id="quiz">QUIZ!!</p>
+                        </div>
+                    </div>
+                </div>
+                </button>
+                <br><br><br>
+
+            </div>
+        </div>
+    </div>    
+</html>

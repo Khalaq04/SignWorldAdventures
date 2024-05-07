@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "{{ url_for('static', filename='stylesheets/tutorial3.css') }}">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <body>
+    
+        <br>
+        <div id="heading">
+            <center>
+                <h1>Tutorial 3</h1>
+                <div id="description">
+                    Lets learn about the fruits vegetables and animals<br>
+                    Go around hovering the fruits veges and animals and if some reveal their true (ASL)signs !!<br><br>
+                   <br>
+                </div>
+            </center>
+        </div>
+        <br>
+        <br>
+        <div id="body">
+            <div id="fruits-basket">
+                <img src="{{url_for('static', filename='images_t3/basket.jpg')}}" usemap="#image-map">
+
+                <map name="image-map">
+                    <area alt="watermelon" title="watermelon" coords="470,122,80" shape="circle" data-image="{{url_for('static', filename='images_t3/watermelon.webp')}}">
+                    <area alt="apple" title="apple" coords="130,444,54" shape="circle" data-image="{{url_for('static', filename='images_t3/apple.webp')}}">
+                    <area alt="oranges" title="oranges" coords="163,165,76,260,123,304,186,227,250,224,247,145,206,143,180,150" shape="poly" data-image="{{url_for('static', filename='images_t3/orange.webp')}}">
+                    <area alt="watermelon" title="watermelon" coords="295,213,296,306,399,319,450,277" shape="poly" data-image="{{url_for('static', filename='images_t3/watermelon.webp')}}">
+                    <area alt="blueberry" title="blueberry" coords="281,483,59" shape="circle" data-image="{{url_for('static', filename='images_t3/blueberry.webp')}}">
+                    <area alt="strawberries" title="strawberries" coords="414,260,525,196" shape="rect" data-image="{{url_for('static', filename='images_t3/strawberry.webp')}}">
+                    <area alt="pears" title="pears" coords="473,273,464,356,501,390,538,371,515,266,511,270,490,262" shape="poly" data-image="{{url_for('static', filename='images_t3/pear.webp')}}">
+                    <area alt="banana" title="banana" coords="135,133,157,158,243,127,238,79,202,49,153,33" shape="poly" data-image="{{url_for('static', filename='images_t3/banana.webp')}}">
+                    <area alt="grape" title="grape" coords="400,351,421,436,525,488,516,411,441,363" shape="poly" data-image="{{url_for('static', filename='images_t3/grapes.webp')}}">
+                    <area alt="grape" title="grape" coords="37,83,47,189,120,196,129,133" shape="poly" data-image="{{url_for('static', filename='images_t3/grapes.webp')}}">
+                    <area alt="pineapple" title="pineapple" coords="338,33,287,203,413,252,414,185" shape="poly" data-image="{{url_for('static', filename='images_t3/pineapple.webp')}}">
+                    <area alt="pear" title="pear" coords="15,266,10,390,93,365" shape="poly" data-image="{{url_for('static', filename='images_t3/pear.webp')}}">
+                    <area alt="watermelon" title="watermelon" coords="312,410,367,504,412,442,378,398" shape="poly" data-image="{{url_for('static', filename='images_t3/watermelon.webp')}}">
+                    <area alt="strawberry" title="strawberry" coords="437,444,401,489,455,512,477,471" shape="poly" data-image="{{url_for('static', filename='images_t3/strawberry.webp')}}">
+                    <area alt="apple" title="apple" coords="212,276,51" shape="circle" data-image="{{url_for('static', filename='images_t3/apple.webp')}}">
+
+
+                </map>
+
+                <div id="image-container">
+                    <img id="hover-image" src="" >
+                </div>
+
+            </div>
+
+            <div id="veges-basket">
+                <img src="{{url_for('static', filename='images_t3/vegetable-basket.png')}}" usemap="#vegimage-map">
+
+                <map name="vegimage-map">
+                    <map name="vegimage-map">
+                        <area target="" alt="tomato" title="tomato" coords="295,327,65" shape="circle" data-image="{{url_for('static', filename='images_t3/tomato.webp')}}">
+                        <area alt="potato" title="potato" coords="127,244,175,257,140,348,99,272" shape="poly" data-image="{{url_for('static', filename='images_t3/potato.webp')}}">
+                        <area alt="carrot" title="carrot" coords="378,83,263,254,321,269" shape="poly" data-image="{{url_for('static', filename='images_t3/carrot.webp')}}">
+                        <area alt="corn" title="corn" coords="467,70,347,214,462,254" shape="poly" data-image="{{url_for('static', filename='images_t3/corn.webp')}}">
+                        <area alt="pumpkin" title="pumpkin" coords="358,222,464,262,459,317,376,351,335,249" shape="poly" data-image="{{url_for('static', filename='images_t3/pumpkin.webp')}}">
+                        <area alt="lettuce" title="lettuce" coords="304,166,215,35,44,152,171,252" shape="poly" data-image="{{url_for('static', filename='images_t3/lettuce.webp')}}">
+                        <area alt="beans" title="beans" coords="266,195,192,245,151,337,216,352" shape="poly" data-image="{{url_for('static', filename='images_t3/bean.webp')}}">
+                        <area alt="beans" title="beans" coords="70,439,170,496" shape="rect" data-image="{{url_for('static', filename='images_t3/bean.webp')}}">
+                </map>
+
+                <div id="image-container">
+                    <img id="hover-image" src="" >
+                </div>
+            </div>
+
+            <div id="zoo">
+                <img src="{{url_for('static', filename='images_t3/zoo.jpg')}}" usemap="#zoo-map">
+
+                <map name="zoo-map">
+                    <map name="zoo-map">
+                        <area target="" alt="monkey" title="monkey" href="" coords="4,265,109,372" shape="rect" data-image="{{url_for('static', filename='images_t3/monkey.webp')}}">
+                        <area target="" alt="owl" title="owl" href="" coords="132,276,196,348" shape="rect" data-image="{{url_for('static', filename='images_t3/owl.webp')}}">
+                        <area target="" alt="elephant" title="elephant" href="" coords="369,408,460,534" shape="rect" data-image="{{url_for('static', filename='images_t3/elephant.webp')}}">
+                        <area target="" alt="giraffe" title="giraffe" href="" coords="166,64,138,230,219,246,211,81" shape="poly"  data-image="{{url_for('static', filename='images_t3/giraffe.webp')}}">
+                        <area target="" alt="panda" title="panda" href="" coords="417,268,543,383" shape="rect"  data-image="{{url_for('static', filename='images_t3/panda.webp')}}">
+                        <area target="" alt="tiger" title="tiger" href="" coords="228,181,276,192,329,284,287,293,223,301" shape="poly"  data-image="{{url_for('static', filename='images_t3/tiger.webp')}}">
+                        <area target="" alt="zebra" title="zebra" href="" coords="339,254,412,343" shape="rect" data-image="{{url_for('static', filename='images_t3/zebra.webp')}}">
+                        <area target="" alt="zebra" title="zebra" href="" coords="100,383,188,504" shape="rect" data-image="{{url_for('static', filename='images_t3/zebra.webp')}}">
+                        <area target="" alt="bird" title="bird" href="" coords="92,208,128,246" shape="rect" data-image="{{url_for('static', filename='images_t3/bird.webp')}}">
+                        <area target="" alt="lion" title="lion" href="" coords="256,178,341,229,341,131,291,124" shape="poly" data-image="{{url_for('static', filename='images_t3/lion.webp')}}">
+                        <area target="" alt="snake" title="snake" href="" coords="348,159,405,237" shape="rect" data-image="{{url_for('static', filename='images_t3/snake.webp')}}">
+                </map>
+
+                <div id="image-container">
+                    <img id="hover-image" src="" >
+                </div>
+            </div>
+
+            <a href="#"> <!--quiz3.html-->
+                <button class="quiz">
+                    Quiz
+                </button>
+            </a>
+
+        </div>
+        <script src="{{ url_for('static', filename='js/tutorial3.js') }}"></script>
+
+
+    </body>
+</html>
+

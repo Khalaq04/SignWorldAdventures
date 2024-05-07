@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href = "{{ url_for('static', filename='stylesheets/home.css') }}">
+    <script src="{{url_for('static', filename='/js/home.js')}}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <body onload="func()">
+        <div class="heading">
+            <h1 style="font-family: Dancing Script, cursive;  font-weight: 700;"> Sign World Adventures</h1>
+        </div>
+        <div class="open">
+            <span style="cursor:pointer;" onclick="openNav()">&#9776;</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Profile</a>
+            <a href="#">Tutorials</a>
+            <a href="">About Us</a>
+            <a href="#">Logout</a>
+          </div>
+          
+
+        <p id="unlocked">{{ulk}}</p>
+        <p id="id">{{id}}</p>
+        <div id="buttons"></div>
+
+        <div id="infocontainer">
+            <p id="info"></p>
+        </div>
+        
+        <img id="bulb" src="../static/bulb.png" title="Pro Tip" onclick="showtip()">
+        <img id="fin" class="trophy" src="../static/trophy.png" title="Final Test" onmouseover="showinfof()" onmouseout="hideinfo()">
+       
+        <div class="pop-up" id="tip">
+            <div class="contain">
+                <p id="tiphead">Pro Tip:</p>
+                <p id="tipbody"></p>
+                <p><button id="tipclose" onclick="closeit()">Continue Playing</button></p>
+            </div>
+        </div>
+
+        <!-- WHERE IS THAT GREEN PART COMING FROM -->
+    </body>
+
+</html>

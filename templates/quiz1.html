@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Finger Spelling Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/quiz1.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div id="id">{{ id }}</div>
+    <div id="gameover">
+        <center>
+            GAME OVER!!<br>
+            Congratulations!!<br>
+            <button id="next" onclick="nexttut()">Continue</button>
+        </center>
+    </div>
+
+    <div class="container">
+        <div class="head-area">
+            <h1 class="head">Lets Play the ASL Spelling Game!!</h1>
+            <h2 class="head">Guess Planet's Name</h2>
+            <h3 class="head">(And a Few Surprise Words)</h3>
+            <div class="game-area">
+                    <div class="asl-letters" id="aslLetters"></div>
+            </div>
+        </div>
+        <div id="word">
+            <div class="image-container" id="ques"> 
+                <img src="" id="letterImage" alt="English Letter Image">
+            </div>
+        </div>
+       <DIV class="ans"> <input type="text" id="userInput" placeholder="Enter Answer" >
+        <button class="submit" onclick="checkAnswer()">Submit</button></DIV>
+        <p id="result"></p>
+        <p id="score">Score: <span id="points">0</span></p>
+        <button class="reload" onclick="location.reload()">Play Again</button>
+    </div>
+    <div class="monkey">
+        <img src="{{ url_for('static', filename='/images/monkey.png')}}">
+    </div>
+    <br>
+    <script src="{{ url_for('static', filename='js/quiz1.js') }}"></script>
+</body>
+</html>
